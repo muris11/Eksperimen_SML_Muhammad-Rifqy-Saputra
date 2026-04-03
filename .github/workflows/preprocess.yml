@@ -24,7 +24,9 @@ jobs:
 
       - name: Run automated preprocessing
         run: |
-          python preprocessing/automate_Nama-siswa.py                 --input_path namadataset_raw/credit_scoring_raw.csv                 --output_path preprocessing/namadataset_preprocessing/credit_scoring_preprocessing.csv
+          python preprocessing/automate_Muhammad-Rifqy-Saputra.py \
+                --input_path namadataset_raw/credit_scoring_raw.csv \
+                --output_path preprocessing/namadataset_preprocessing/credit_scoring_preprocessing.csv
 
       - name: Upload preprocessing artifact
         uses: actions/upload-artifact@v4
